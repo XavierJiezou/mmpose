@@ -1,3 +1,10 @@
+# Demo data and visualization
+demo/data/
+vis/
+
+# Datasets
+*.bz2
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
