@@ -60,7 +60,7 @@ python demo/body3d_multiview_detect_and_regress_img_demo.py \
     [--img-root ${IMG_ROOT}] \
     [--device ${GPU_ID or CPU}] \
     [--out-img-root ${OUTPUT_DIR}] \
-    [--visualize-single-view ${VIS_SINGLE_IMG}] \
+    [--visualize-single-view ${VIS_SINGLE_IMG}]
 ```
 
 Tips: The parameters in `[]` are optional, and other parameters are required.

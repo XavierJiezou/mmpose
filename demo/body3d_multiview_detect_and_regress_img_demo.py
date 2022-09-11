@@ -70,7 +70,8 @@ def get_panoptic_camera_parameters(cam_file,
         if cam['name'] in camera_names:
             sel_cam = {}
             R_w2c = np.array(cam['R']).dot(M)
-            T_w2c = np.array(cam['t']).reshape((3, 1)) * 10.0  # cm to mm
+            # T_w2c = np.array(cam['t']).reshape((3, 1)) * 10.0  # cm to mm
+            T_w2c = np.array(cam['t']).reshape((3, 1))  # cm to mm
             R_c2w = R_w2c.T
             T_c2w = -R_w2c.T @ T_w2c
             sel_cam['R'] = R_c2w.tolist()
