@@ -107,5 +107,11 @@ python demo/body3d_multiview_detect_and_regress_img_demo.py \
 ### Train with multiple machines
 
 ### Launch multiple jobs on a single machine
-
+  
 ## Benchmark
+
+## Issues
+
+- [Pretrained voxelpose with custom data](https://github.com/open-mmlab/mmpose/issues/1310)
+
+> As far as I know, current multiview 3d pose estimation methods like VoxelPose cannot perform well in a new scene, sometimes may fail in the same scene with a different camera setting. So I recommend you to train a your model from scratch. Given that GT 3d poses cannot be easily obtained, you can follow the setting on campus/shelf, where you can artificially generate the training data.
